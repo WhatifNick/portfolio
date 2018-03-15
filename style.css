@@ -1,0 +1,416 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #6F6F71;
+  font-family: Tahoma;
+}
+
+/* .eggs {
+  text-align: center;
+} */
+
+
+
+.egg-bottom {
+  position: absolute;
+  /* display: fixed; */
+  max-width: 20%;
+  height: auto;
+
+  margin-top: 300px;
+  top: 1vh;
+  /* margin-top: 30%; */
+  margin-left: 40%;
+  /* transform: translate(-50%, -50%); */
+  animation: wigglingdown 8s ease forwards;
+
+}
+.egg-top {
+  position: absolute;
+  /* display: fixed; */
+
+  width: 20%;
+  height: auto;
+
+  margin-top: 300px;
+  top: 1vh;
+  /* margin-top: 30%; */
+  margin-left: 40%;
+  /* transform: translate(-50%, -50%); */
+  animation: wigglingup 8s ease forwards;
+
+  /* transform: translateX(500px) 1s ease 8s; */
+
+}
+.cat {
+  position: absolute;
+  /* display: fixed; */
+  width: 10%;
+  height: auto;
+
+  margin-top: 360px;
+  top: 1vh;
+  /* margin-top: 38%; */
+  margin-left: 45%;
+  /* transform: translate(-50%, -50%); */
+  animation: grow 1s ease forwards 8s;
+  /* transition: scale(5) 500ms 8s ease forwards; */
+}
+@-webkit-keyframes grow {
+  0% {transform: scale(1);}
+  100% {transform: scale(3);}
+}
+/* .cat:hover {
+  transform: rotate(5deg);
+  100% {transform: rotate(-5deg)}
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  /* grid-template */
+}
+
+
+/* Textbox 1 start */
+.textbox1 {
+  /* top: 1vh; */
+  /* margin-top: 20vw;
+  margin-left: 10%; */
+
+  /* animation: slide1 1s ease backwards 8s; */ */
+}
+.textbox1:hover {
+  filter: invert(100%);
+ }
+#bubble1 {
+
+  max-width: 100%;
+
+  /* max-width: 500px; */
+}
+.letters1 {
+  background-image: url(/Users/alexspong/Google Drive/Coder Academy/HTML & CSS/week4/egg/cat-egg/angry-text-bubble.png);
+  position: absolute;
+  color: black;
+  letter-spacing: 0px;
+  text-decoration: none;
+  font-size: 3vw;
+  /* margin-top: 6%; */
+
+
+  text-align: center;
+}
+.letters1:hover {
+  animation: letterbounce 1.5s linear infinite;
+}
+/* Textbox 1 end */
+
+
+/* Textbox 4 start */
+.textbox4 {
+  /* margin-top: 0px; */
+  /* top: 1vh; */
+  /* animation: slide4 1s ease backwards 8s; */
+}
+.textbox4:hover {
+  filter: invert(100%);
+ }
+#bubble4 {
+  /* position: absolute; */
+  /* height: 200px; */
+  max-width: 100%;
+  /* width: 250px; */
+  /* margin-top: 150px;
+  margin-left: 65%; */
+}
+
+.letters4 {
+  color: black;
+  letter-spacing: 5px;
+  position: absolute;
+  /* margin-top: 185px; */
+  /* margin-left: 69%; */
+  text-decoration: none;
+  font-size: 50px;
+}
+.letters4:hover {
+  animation: letterbounce 1.5s linear infinite;
+}
+/* Textbox 4 ends */
+
+/* Textbox 6 start */
+.textbox6 {
+  margin-top: 0px;
+  top: 1vh;
+  animation: slide6 1s ease backwards 8s;
+}
+.textbox6:hover {
+  filter: invert(100%);
+ }
+#bubble6 {
+  position: absolute;
+  height: auto;
+  width: 20%;
+  margin-top: 500px;
+  margin-left: 65%;
+}
+
+.letters6 {
+  color: black;
+  letter-spacing: 5px;
+  position: absolute;
+  margin-top: 575px;
+  margin-left: 70%;
+  text-decoration: none;
+  font-size: 50px;
+}
+.letters6:hover {
+  animation: letterbounce 1.5s linear infinite;
+}
+/* Textbox 6 ends */
+
+
+
+/* Unsued CSS text boxes */
+/* p.speech {
+  position: absolute;
+  display: fixed;
+  margin-top: 100px;
+  top: 1vh;
+  /* margin-top: 10%; */
+  /* margin-left: 65%; */
+  /* transform: translate(-50%, -50%); */
+  /* color: black;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  border: 8px solid black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  animation: slide 1s ease backwards 8s;
+} */
+
+
+/* p.speech:hover {
+  background-color: blue;
+  border: 8px solid green;
+} */
+/* p.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+  border: 25px solid;
+  border-color: black transparent transparent black;
+}
+p.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 100px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+} */
+
+
+
+
+/* Aminations start */
+/* .letters span:nth-child(1)
+{
+  animation-delay: 0s;
+}
+.letters span:nth-child(2)
+{
+  animation-delay: 0.2s;
+}.letters span:nth-child(3)
+{
+  animation-delay: 0.4s;
+}.letters span:nth-child(4)
+{
+  animation-delay: 0.6s;
+}
+.letters span:nth-child(5)
+{
+  animation-delay: 0.8s;
+}.letters span:nth-child(6)
+{
+  animation-delay: 1s;
+} */
+/* Makes letters bouce animation */
+@keyframes letterbounce {
+  0% {transform: translateY(0px);}
+  10% {transform: translateY(-30px);}
+  15% {transform: translateY(0px);}
+  25% {transform: translateY(-20px);}
+  30% {transform: translateY(0px);}
+  40% {transform: translateY(-10px);}
+  45% {transform: translateY(0px);}
+  100% {transform: translateY(0px);}
+}
+
+/* Slide in textboxes */
+@keyframes slide1 {
+  0% {transform: translateX(-500px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes slide4 {
+  0% {transform: translateX(800px);}
+  100% {transform: translateX(0px);}
+}
+
+
+
+
+
+
+
+
+
+
+.hidden { display: none; }
+
+.unhidden { display: block; }
+
+
+    /* transform: scaleY(2) 500ms ease-in-out 1s; */
+    /* -webkit-animation-name: wiggling;
+    -ms-animation-name: wiggling;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 2;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out; */
+
+
+@keyframes stretch {
+  0% {transform: scaleY(1);}
+  100% {transform: scaleY(1.2);}
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 0;
+  }
+  100% {
+    background-color: yellow;
+    left: 200px;
+    top: 50px;
+  }
+}
+
+
+ @-webkit-keyframes wigglingup {
+    0% {transform: rotate(5deg);}
+    10% {transform: rotate(-3deg);}
+
+    15% {transform: scaleY(1.1)}
+    20% {transform: rotate(5deg);}
+    25% {transform: rotate(-4deg);}
+
+    33% {transform: scaleY(1.2)}
+    45% {transform: translateY(-5px);}
+
+    50% {transform: rotate(5deg);}
+    55%% {transform: rotate(-6deg);}
+
+    60% {transform: scaleY(1.3)}
+    65% {transform: translateY(-10px);}
+    75% {transform: rotate(-5deg);}
+
+    85% {transform: scaleY(1.5);}
+    /* 99% {transform: opacity(1);} */
+    95% {
+      transform: rotate(0deg);
+      transform: translateY(-1000px);
+      }
+      100% {transform: translateY(-1000px);}
+  }
+
+  @keyframes wigglingdown {
+     0% {transform: rotate(5deg);}
+     10% {transform: rotate(-3deg);}
+
+     15% {transform: scaleY(1.1)}
+     20% {transform: rotate(5deg);}
+     25% {transform: rotate(-4deg);}
+
+     33% {transform: scaleY(1.2)}
+     50% {transform: rotate(5deg);}
+     55%% {transform: rotate(-4deg);}
+
+     60% {transform: scaleY(1.3)}
+     75% {transform: rotate(-3deg);}
+     85% {transform: scaleY(1.5);}
+     /* 99% {transform: opacity(1);} */
+     95% {
+       transform: rotate(0deg);
+       transform: translateY(1000px);
+       }
+    100% {transform: translateX(1000px);}
+   }
+
+/* changes the width of the cat when the screen gets below 700px */
+/* @media screen and (max-width: 600px){
+    .cat {
+      height: 25px;
+    }
+    .egg-bottom {
+      height: 100px;
+    }
+    .egg-top {
+      height: 100px;
+    }
+    #bubble4 {
+      width: 125px;
+      height: 50px;
+    }
+    .letters4 {
+      font-size: 25px;
+    }
+} */
+
+/* These are used for different browsers, use then later! */
+/*
+  @-ms-keyframes wiggling {
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(-3deg);}
+    50% {transform: rotate(5deg);}
+    75% {transform: rotate(-3deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  @-webkit-keyframes wiggling {
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(-3deg);}
+    50% {transform: rotate(5deg);}
+    75% {transform: rotate(-3deg);}
+    100% {transform: rotate(0deg);}
+  } */
+  /* @media screen and (max-width: 600px){
+      #bubble1 {
+        width: 100px;
+
+      } */
+  }
