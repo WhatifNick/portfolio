@@ -6,13 +6,13 @@
 body {
   margin: 0px;
   padding: 0px;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: #6F6F71;
   font-family: Tahoma;
 }
 
 
-/*
+
 .egg-bottom {
   position: absolute;
   max-width: 20%;
@@ -30,14 +30,14 @@ body {
   top: 30vw;
   left: 40%;
   animation: wigglingup 8s ease forwards;
-} */
+}
 .cat {
   position: absolute;
   width: 10%;
   height: auto;
   top: 35vw;
   left: 45%;
-  animation: grow 1s ease forwards;
+  animation: grow 1s ease forwards 8s;
 }
 .cat-angry {
   position: absolute;
@@ -47,9 +47,7 @@ body {
   top: 24.5vw;
   left: 35%;
 }
-.cat:hover + .cat-angry {
-  display: block;
-}
+
 /* .box {
   position: absolute;
   width: 7%;
@@ -58,6 +56,9 @@ body {
   left: 30%;
   border: 50px solid black;
 } */
+.paws {
+  animation: rise 4s linear 9s;
+}
 .paw-right {
   position: absolute;
   width: 20%;
@@ -71,7 +72,28 @@ body {
   height: auto;
   top: 800px;
   left: 20%;
-  animation:
+}
+
+.cat:hover + .cat-angry {
+  display: block;
+}
+.cat:hover + .paws {
+  transform: translateY(-800px);
+
+}
+@keyframes rise {
+  0% {transform: translateY(0px);}
+  10% {transform: translateY(-300px);}
+  50% {transform: translateY(-300px);}
+
+  55% {transform: translateY(-400px);}
+  70% {transform: translateY(-400px);}
+
+  75% {transform: translateY(-300px);}
+  99% {transform: translateY(-300px);}
+
+  100% {transform: translateY(0);}
+
 }
 /* .paws:hover {
   transform: translateY(-2000px);
@@ -86,9 +108,7 @@ body {
 
 /* Textbox 1 start */
   .textbox1 {
-
-
-    /* animation: slide1 1s ease backwards 8s; */
+    animation: slide1 1s ease backwards 8s;
   }
   .textbox1:hover {
     filter: invert(100%);
@@ -118,8 +138,7 @@ body {
 
 /* Textbox 2 start */
   .textbox2 {
-
-    /* animation: slide2 1s ease backwards 8s; */
+    animation: slide2 1s ease backwards 8s;
   }
   .textbox2:hover {
     filter: invert(100%);
@@ -132,7 +151,6 @@ body {
     top: 35vw;
     left: 1%;
   }
-
   .letters2 {
     color: black;
     letter-spacing: 0px;
@@ -150,8 +168,7 @@ body {
 
 /* Textbox 3 start */
   .textbox3 {
-
-    /* animation: slide3 1s ease backwards 8s; */
+    animation: slide3 1s ease backwards 8s;
   }
   .textbox3:hover {
     filter: invert(100%);
@@ -181,7 +198,7 @@ body {
 
 /* Textbox 4 start */
   .textbox4 {
-    /* animation: slide4 1s ease backwards 8s; */
+    animation: slide4 1s ease backwards 8s;
   }
   .textbox4:hover {
     filter: invert(100%);
@@ -209,7 +226,7 @@ body {
 
 /* Textbox 5 start */
   .textbox5 {
-    /* animation: slide5 1s ease backwards 8s; */
+    animation: slide5 1s ease backwards 8s;
   }
   .textbox5:hover {
     filter: invert(100%);
@@ -240,8 +257,7 @@ body {
 
 /* Textbox 6 start */
   .textbox6 {
-
-    /* animation: slide6 1s ease backwards 8s; */
+    animation: slide6 1s ease backwards 8s;
   }
   .textbox6:hover {
     filter: invert(100%);
@@ -288,11 +304,30 @@ body {
   100% {transform: translateX(0px);}
 }
 
+@keyframes slide2 {
+  0% {transform: translateX(-500px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes slide3 {
+  0% {transform: translateX(-500px);}
+  100% {transform: translateX(0px);}
+}
+
 @keyframes slide4 {
   0% {transform: translateX(800px);}
   100% {transform: translateX(0px);}
 }
 
+@keyframes slide5 {
+  0% {transform: translateX(800px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes slide6 {
+  0% {transform: translateX(800px);}
+  100% {transform: translateX(0px);}
+}
 
 
 
