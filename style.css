@@ -1,254 +1,275 @@
+/* body, html {
+  height: 100%;
+} */
+
+
 body {
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #6F6F71;
   font-family: Tahoma;
 }
 
-/* .eggs {
-  text-align: center;
-} */
 
-
-
+/*
 .egg-bottom {
   position: absolute;
-  /* display: fixed; */
   max-width: 20%;
   height: auto;
+  top: 30vw;
 
-  margin-top: 300px;
-  top: 1vh;
-  /* margin-top: 30%; */
   margin-left: 40%;
-  /* transform: translate(-50%, -50%); */
   animation: wigglingdown 8s ease forwards;
 
 }
 .egg-top {
   position: absolute;
-  /* display: fixed; */
-
   width: 20%;
   height: auto;
-
-  margin-top: 300px;
-  top: 1vh;
-  /* margin-top: 30%; */
-  margin-left: 40%;
-  /* transform: translate(-50%, -50%); */
+  top: 30vw;
+  left: 40%;
   animation: wigglingup 8s ease forwards;
-
-  /* transform: translateX(500px) 1s ease 8s; */
-
-}
+} */
 .cat {
   position: absolute;
-  /* display: fixed; */
   width: 10%;
   height: auto;
+  top: 35vw;
+  left: 45%;
+  animation: grow 1s ease forwards;
+}
+.cat-angry {
+  position: absolute;
+  display: none;
+  width: 30%;
+  height: auto;
+  top: 24.5vw;
+  left: 35%;
+}
+.cat:hover + .cat-angry {
+  display: block;
+}
+/* .box {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  top: 25vw;
+  left: 30%;
+  border: 50px solid black;
+} */
+.paw-right {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 800px;
+  left: 70%;
+}
+.paw-left {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 800px;
+  left: 20%;
+  animation:
+}
+/* .paws:hover {
+  transform: translateY(-2000px);
 
-  margin-top: 360px;
-  top: 1vh;
-  /* margin-top: 38%; */
-  margin-left: 45%;
-  /* transform: translate(-50%, -50%); */
-  animation: grow 1s ease forwards 8s;
-  /* transition: scale(5) 500ms 8s ease forwards; */
-}
-@-webkit-keyframes grow {
-  0% {transform: scale(1);}
-  100% {transform: scale(3);}
-}
+
+} */
 /* .cat:hover {
   transform: rotate(5deg);
   100% {transform: rotate(-5deg)}
 } */
 
-.container {
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  /* grid-template */
-}
-
 
 /* Textbox 1 start */
-.textbox1 {
-  /* top: 1vh; */
-  /* margin-top: 20vw;
-  margin-left: 10%; */
-
-  /* animation: slide1 1s ease backwards 8s; */ */
-}
-.textbox1:hover {
-  filter: invert(100%);
- }
-#bubble1 {
-
-  max-width: 100%;
-
-  /* max-width: 500px; */
-}
-.letters1 {
-  background-image: url(/Users/alexspong/Google Drive/Coder Academy/HTML & CSS/week4/egg/cat-egg/angry-text-bubble.png);
-  position: absolute;
-  color: black;
-  letter-spacing: 0px;
-  text-decoration: none;
-  font-size: 3vw;
-  /* margin-top: 6%; */
+  .textbox1 {
 
 
-  text-align: center;
-}
-.letters1:hover {
-  animation: letterbounce 1.5s linear infinite;
-}
+    /* animation: slide1 1s ease backwards 8s; */
+  }
+  .textbox1:hover {
+    filter: invert(100%);
+   }
+  .bubble1 {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    top: 4vw;
+    left: 3%;
+    max-width: 300px;
+  }
+  .letters1 {
+    position: absolute;
+    color: black;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-size: 5vw;
+    top: 20vw;
+    left: 15%;
+
+  }
+  .letters1:hover {
+    animation: letterbounce 1.5s linear infinite;
+  }
 /* Textbox 1 end */
+
+/* Textbox 2 start */
+  .textbox2 {
+
+    /* animation: slide2 1s ease backwards 8s; */
+  }
+  .textbox2:hover {
+    filter: invert(100%);
+  }
+  .bubble2 {
+    position: absolute;
+    height: auto;
+    width: 35%;
+    /* max-width: 300px; */
+    top: 35vw;
+    left: 1%;
+  }
+
+  .letters2 {
+    color: black;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 40vw;
+    left: 10%;
+    text-decoration: none;
+    font-size: 6vw;
+  }
+  .letters2:hover {
+    animation: letterbounce 1.5s linear infinite;
+  }
+/* Textbox 2 ends */
+
+
+/* Textbox 3 start */
+  .textbox3 {
+
+    /* animation: slide3 1s ease backwards 8s; */
+  }
+  .textbox3:hover {
+    filter: invert(100%);
+  }
+  .bubble3 {
+    position: absolute;
+    height: auto;
+    width: 40%;
+    max-width: 300px;
+    top: 53vw;
+    left: 5%;
+  }
+  .letters3 {
+    color: black;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 62vw;
+    left: 10%;
+    text-decoration: none;
+    font-size: 6vw;
+  }
+  .letters3:hover {
+    animation: letterbounce 1.5s linear infinite;
+  }
+/* Textbox 3 ends */
 
 
 /* Textbox 4 start */
-.textbox4 {
-  /* margin-top: 0px; */
-  /* top: 1vh; */
-  /* animation: slide4 1s ease backwards 8s; */
-}
-.textbox4:hover {
-  filter: invert(100%);
- }
-#bubble4 {
-  /* position: absolute; */
-  /* height: 200px; */
-  max-width: 100%;
-  /* width: 250px; */
-  /* margin-top: 150px;
-  margin-left: 65%; */
-}
-
-.letters4 {
-  color: black;
-  letter-spacing: 5px;
-  position: absolute;
-  /* margin-top: 185px; */
-  /* margin-left: 69%; */
-  text-decoration: none;
-  font-size: 50px;
-}
-.letters4:hover {
-  animation: letterbounce 1.5s linear infinite;
-}
+  .textbox4 {
+    /* animation: slide4 1s ease backwards 8s; */
+  }
+  .textbox4:hover {
+    filter: invert(100%);
+   }
+  .bubble4 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 11vw;
+    left: 65%;
+  }
+  .letters4 {
+    color: black;
+    letter-spacing: 0px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 6vw;
+    top: 25vw;
+    left: 75%;
+  }
+  .letters4:hover {
+    animation: letterbounce 1.5s linear infinite;
+  }
 /* Textbox 4 ends */
 
-/* Textbox 6 start */
-.textbox6 {
-  margin-top: 0px;
-  top: 1vh;
-  animation: slide6 1s ease backwards 8s;
-}
-.textbox6:hover {
-  filter: invert(100%);
- }
-#bubble6 {
-  position: absolute;
-  height: auto;
-  width: 20%;
-  margin-top: 500px;
-  margin-left: 65%;
-}
+/* Textbox 5 start */
+  .textbox5 {
+    /* animation: slide5 1s ease backwards 8s; */
+  }
+  .textbox5:hover {
+    filter: invert(100%);
+   }
+  .bubble5 {
+    position: absolute;
+    width: 34%;
+    height: auto;
+    top: 35vw;
+    left: 66%;
+  }
+  .letters5 {
+    color: black;
+    letter-spacing: 0px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 6vw;
+    top: 40vw;
+    left: 77%;
+  }
+  .letters5:hover {
+    animation: letterbounce 1.5s linear infinite;
+  }
+/* Textbox 5 ends */
 
-.letters6 {
-  color: black;
-  letter-spacing: 5px;
-  position: absolute;
-  margin-top: 575px;
-  margin-left: 70%;
-  text-decoration: none;
-  font-size: 50px;
-}
-.letters6:hover {
-  animation: letterbounce 1.5s linear infinite;
-}
+
+
+
+/* Textbox 6 start */
+  .textbox6 {
+
+    /* animation: slide6 1s ease backwards 8s; */
+  }
+  .textbox6:hover {
+    filter: invert(100%);
+  }
+  .bubble6 {
+    position: absolute;
+    height: auto;
+    width: 40%;
+    max-width: 300px;
+    top: 58vw;
+    left: 65%;
+  }
+  .letters6 {
+    color: black;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 65vw;
+    left: 70%;
+    text-decoration: none;
+    font-size: 6vw;
+  }
+  .letters6:hover {
+    animation: letterbounce 1.5s linear infinite;
+  }
 /* Textbox 6 ends */
 
 
 
-/* Unsued CSS text boxes */
-/* p.speech {
-  position: absolute;
-  display: fixed;
-  margin-top: 100px;
-  top: 1vh;
-  /* margin-top: 10%; */
-  /* margin-left: 65%; */
-  /* transform: translate(-50%, -50%); */
-  /* color: black;
-  width: 250px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  background-color: #fff;
-  border: 8px solid black;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 2px 2px 4px #888;
-  -moz-box-shadow: 2px 2px 4px #888;
-  box-shadow: 2px 2px 4px #888;
-  animation: slide 1s ease backwards 8s;
-} */
-
-
-/* p.speech:hover {
-  background-color: blue;
-  border: 8px solid green;
-} */
-/* p.speech:before {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 30px;
-  top: 100px;
-  border: 25px solid;
-  border-color: black transparent transparent black;
-}
-p.speech:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 38px;
-  top: 100px;
-  border: 15px solid;
-  border-color: #fff transparent transparent #fff;
-} */
-
-
-
-
-/* Aminations start */
-/* .letters span:nth-child(1)
-{
-  animation-delay: 0s;
-}
-.letters span:nth-child(2)
-{
-  animation-delay: 0.2s;
-}.letters span:nth-child(3)
-{
-  animation-delay: 0.4s;
-}.letters span:nth-child(4)
-{
-  animation-delay: 0.6s;
-}
-.letters span:nth-child(5)
-{
-  animation-delay: 0.8s;
-}.letters span:nth-child(6)
-{
-  animation-delay: 1s;
-} */
 /* Makes letters bouce animation */
 @keyframes letterbounce {
   0% {transform: translateY(0px);}
@@ -281,10 +302,6 @@ p.speech:after {
 
 
 
-.hidden { display: none; }
-
-.unhidden { display: block; }
-
 
     /* transform: scaleY(2) 500ms ease-in-out 1s; */
     /* -webkit-animation-name: wiggling;
@@ -302,26 +319,8 @@ p.speech:after {
   100% {transform: scaleY(1.2);}
 }
 
-@keyframes example {
-  0% {
-    background-color: red;
-    top: 0;
-    left: 0;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 0;
-  }
-  100% {
-    background-color: yellow;
-    left: 200px;
-    top: 50px;
-  }
-}
 
-
- @-webkit-keyframes wigglingup {
+ @keyframes wigglingup {
     0% {transform: rotate(5deg);}
     10% {transform: rotate(-3deg);}
 
@@ -371,6 +370,10 @@ p.speech:after {
     100% {transform: translateX(1000px);}
    }
 
+   @keyframes grow {
+     0% {transform: scale(1);}
+     100% {transform: scale(3);}
+   }
 /* changes the width of the cat when the screen gets below 700px */
 /* @media screen and (max-width: 600px){
     .cat {
