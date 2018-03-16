@@ -1,24 +1,26 @@
 /* body, html {
   height: 100%;
 } */
-
+@font-face {
+font-family: "FunSized";
+src: url("css/fonts/FunSized.ttf");
+}
 
 body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
   background-color: #6F6F71;
-  font-family: Tahoma;
+  font-family: FunSized;
 }
 
 
 
 .egg-bottom {
   position: absolute;
-  max-width: 20%;
+  width: 20%;
   height: auto;
-  top: 30vw;
-
+  top: 12vw;
   margin-left: 40%;
   animation: wigglingdown 8s ease forwards;
 
@@ -27,37 +29,47 @@ body {
   position: absolute;
   width: 20%;
   height: auto;
-  top: 30vw;
+  top: 12vw;
   left: 40%;
   animation: wigglingup 8s ease forwards;
 }
 .cat {
   position: absolute;
-  width: 10%;
+  width: 30%;
+  /* max-width: 200px; */
   height: auto;
-  top: 35vw;
-  left: 45%;
-  animation: grow 1s ease forwards 8s;
+  top: 151px;
+  left: 35%;
+  animation: grow 1s ease both 8s;
+}
+@keyframes grow {
+  0% {transform: scale(.33);}
+  100% {transform: scale(1);}
 }
 .cat-angry {
   position: absolute;
-  display: none;
+  opacity: 0;
   width: 30%;
+  max-width: 500px;
   height: auto;
-  top: 24.5vw;
+  top: 151px;
   left: 35%;
+  animation: grow 1s ease both 8s;
 }
 
 /* .box {
   position: absolute;
-  width: 7%;
-  height: 7%;
-  top: 25vw;
-  left: 30%;
-  border: 50px solid black;
+  width: 15%;
+  height: 11%;
+  top: 30vw;
+  left: 36%;
+  border: 50px solid;
+  background: black;
+  opacity: 0;
+  border-radius: 3em;
 } */
 .paws {
-  animation: rise 4s linear 9s;
+  animation: rise 4s linear 10s;
 }
 .paw-right {
   position: absolute;
@@ -74,13 +86,16 @@ body {
   left: 20%;
 }
 
-.cat:hover + .cat-angry {
-  display: block;
-}
-.cat:hover + .paws {
-  transform: translateY(-800px);
+.cat-angry:hover {
+  opacity: 1;
 
 }
+/* .box:hover + .paw-right {
+  transform: translateY(-400px);
+}
+.box:hover + .paw-left {
+  transform: translateY(-400px);
+} */
 @keyframes rise {
   0% {transform: translateY(0px);}
   10% {transform: translateY(-300px);}
@@ -115,11 +130,12 @@ body {
    }
   .bubble1 {
     position: absolute;
-    width: 35%;
+    width: 25%;
+    max-width: 350px;
     height: auto;
-    top: 4vw;
-    left: 3%;
-    max-width: 300px;
+    top: 10px;
+    left: 10%;
+    /* max-width: 300px; */
   }
   .letters1 {
     position: absolute;
@@ -127,8 +143,8 @@ body {
     letter-spacing: 0px;
     text-decoration: none;
     font-size: 5vw;
-    top: 20vw;
-    left: 15%;
+    top: 100px;
+    left: 14%;
 
   }
   .letters1:hover {
@@ -138,7 +154,7 @@ body {
 
 /* Textbox 2 start */
   .textbox2 {
-    animation: slide2 1s ease backwards 8s;
+    animation: slide2 1s ease backwards 8.5s;
   }
   .textbox2:hover {
     filter: invert(100%);
@@ -146,19 +162,19 @@ body {
   .bubble2 {
     position: absolute;
     height: auto;
-    width: 35%;
-    /* max-width: 300px; */
-    top: 35vw;
-    left: 1%;
+    width: 25%;
+    max-width: 400px;
+    top: 300px;
+    left: 5%;
   }
   .letters2 {
     color: black;
     letter-spacing: 0px;
     position: absolute;
-    top: 40vw;
+    top: 350px;
     left: 10%;
     text-decoration: none;
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .letters2:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -168,7 +184,7 @@ body {
 
 /* Textbox 3 start */
   .textbox3 {
-    animation: slide3 1s ease backwards 8s;
+    animation: slide3 1s ease backwards 9s;
   }
   .textbox3:hover {
     filter: invert(100%);
@@ -176,17 +192,17 @@ body {
   .bubble3 {
     position: absolute;
     height: auto;
-    width: 40%;
-    max-width: 300px;
-    top: 53vw;
-    left: 5%;
+    width: 25%;
+    /* max-width: 300px; */
+    top: 470px;
+    left: 7%;
   }
   .letters3 {
     color: black;
     letter-spacing: 0px;
     position: absolute;
-    top: 62vw;
-    left: 10%;
+    top: 545px;
+    left: 11%;
     text-decoration: none;
     font-size: 6vw;
   }
@@ -205,9 +221,9 @@ body {
    }
   .bubble4 {
     position: absolute;
-    width: 30%;
+    width: 24%;
     height: auto;
-    top: 11vw;
+    top: 40px;
     left: 65%;
   }
   .letters4 {
@@ -216,8 +232,8 @@ body {
     position: absolute;
     text-decoration: none;
     font-size: 6vw;
-    top: 25vw;
-    left: 75%;
+    top: 100px;
+    left: 68%;
   }
   .letters4:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -226,16 +242,16 @@ body {
 
 /* Textbox 5 start */
   .textbox5 {
-    animation: slide5 1s ease backwards 8s;
+    animation: slide5 1s ease backwards 8.5s;
   }
   .textbox5:hover {
     filter: invert(100%);
    }
   .bubble5 {
     position: absolute;
-    width: 34%;
+    width: 30%;
     height: auto;
-    top: 35vw;
+    top: 280px;
     left: 66%;
   }
   .letters5 {
@@ -244,8 +260,8 @@ body {
     position: absolute;
     text-decoration: none;
     font-size: 6vw;
-    top: 40vw;
-    left: 77%;
+    top: 350px;
+    left: 76%;
   }
   .letters5:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -257,7 +273,7 @@ body {
 
 /* Textbox 6 start */
   .textbox6 {
-    animation: slide6 1s ease backwards 8s;
+    animation: slide6 1s ease backwards 9s;
   }
   .textbox6:hover {
     filter: invert(100%);
@@ -265,16 +281,16 @@ body {
   .bubble6 {
     position: absolute;
     height: auto;
-    width: 40%;
-    max-width: 300px;
-    top: 58vw;
+    width: 30%;
+    max-width: 500px;
+    top: 500px;
     left: 65%;
   }
   .letters6 {
     color: black;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     position: absolute;
-    top: 65vw;
+    top: 565px;
     left: 70%;
     text-decoration: none;
     font-size: 6vw;
@@ -300,17 +316,17 @@ body {
 
 /* Slide in textboxes */
 @keyframes slide1 {
-  0% {transform: translateX(-500px);}
+  0% {transform: translateX(-700px);}
   100% {transform: translateX(0px);}
 }
 
 @keyframes slide2 {
-  0% {transform: translateX(-500px);}
+  0% {transform: translateX(-700px);}
   100% {transform: translateX(0px);}
 }
 
 @keyframes slide3 {
-  0% {transform: translateX(-500px);}
+  0% {transform: translateX(-700px);}
   100% {transform: translateX(0px);}
 }
 
@@ -375,11 +391,10 @@ body {
 
     85% {transform: scaleY(1.5);}
     /* 99% {transform: opacity(1);} */
-    95% {
+    100% {
       transform: rotate(0deg);
       transform: translateY(-1000px);
       }
-      100% {transform: translateY(-1000px);}
   }
 
   @keyframes wigglingdown {
@@ -398,17 +413,13 @@ body {
      75% {transform: rotate(-3deg);}
      85% {transform: scaleY(1.5);}
      /* 99% {transform: opacity(1);} */
-     95% {
+     100% {
        transform: rotate(0deg);
        transform: translateY(1000px);
        }
-    100% {transform: translateX(1000px);}
    }
 
-   @keyframes grow {
-     0% {transform: scale(1);}
-     100% {transform: scale(3);}
-   }
+
 /* changes the width of the cat when the screen gets below 700px */
 /* @media screen and (max-width: 600px){
     .cat {
@@ -446,9 +457,96 @@ body {
     75% {transform: rotate(-3deg);}
     100% {transform: rotate(0deg);}
   } */
-  /* @media screen and (max-width: 600px){
-      #bubble1 {
-        width: 100px;
-
-      } */
-  }
+  @media screen and (max-width: 970px){
+    .egg-bottom {
+      position: absolute;
+      width: 20%;
+      height: auto;
+      top: 30vw;
+      margin-left: 40%;
+    }
+    .egg-top {
+      position: absolute;
+      width: 20%;
+      height: auto;
+      top: 30vw;
+      left: 40%;
+    }
+      .cat {
+        width: 30%;
+        height: auto;
+        top: 24.5vw;
+        left: 36%;
+      }
+      .cat-angry {
+        width: 30%;
+        height: auto;
+        top: 24.5vw;
+        left: 36%;
+      }
+      .bubble1 {
+        width: 35%;
+        height: auto;
+        top: 4vw;
+        left: 3%;
+      }
+      .letters1 {
+        font-size: 5vw;
+        top: 15vw;
+        left: 8%;
+      }
+      .bubble2 {
+        height: auto;
+        width: 35%;
+        top: 35vw;
+        left: 1%;
+      }
+      .letters2 {
+        top: 41vw;
+        left: 8%;
+        font-size: 5vw;
+      }
+      .bubble3 {
+        width: 35%;
+        top: 53vw;
+        left: 5%;
+      }
+      .letters3 {
+        top: 63vw;
+        left: 11%;
+        font-size: 5vw;
+      }
+      .bubble4 {
+        width: 30%;
+        height: auto;
+        top: 11vw;
+        left: 65%;
+      }
+      .letters4 {
+        font-size: 6vw;
+        top: 17vw;
+        left: 71%;
+      }
+      .bubble5 {
+        width: 34%;
+        height: auto;
+        top: 35vw;
+        left: 66%;
+      }
+      .letters5 {
+        font-size: 6vw;
+        top: 40vw;
+        left: 77%;
+      }
+      .bubble6 {
+        width: 40%;
+        height: auto;
+        top: 55vw;
+        left: 60%;
+      }
+      .letters6 {
+        top: 62vw;
+        left: 69%;
+        font-size: 6vw;
+      }
+}
