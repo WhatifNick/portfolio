@@ -22,7 +22,7 @@ body {
   height: auto;
   top: 12vw;
   margin-left: 40%;
-  animation: wigglingdown 8s ease forwards;
+  animation: wigglingdown 5s ease forwards;
 
 }
 .egg-top {
@@ -31,7 +31,7 @@ body {
   height: auto;
   top: 12vw;
   left: 40%;
-  animation: wigglingup 8s ease forwards;
+  animation: wigglingup 5s ease forwards;
 }
 .cat {
   position: absolute;
@@ -40,7 +40,7 @@ body {
   height: auto;
   top: 151px;
   left: 35%;
-  animation: grow 1s ease both 8s;
+  animation: grow 1s ease both 5s;
 }
 @keyframes grow {
   0% {transform: scale(.33);}
@@ -54,7 +54,47 @@ body {
   height: auto;
   top: 151px;
   left: 35%;
-  animation: grow 1s ease both 8s;
+  animation: grow 1s ease both 5s;
+}
+.twitter {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 43%;
+  animation: fly 20s infinite both 8s;
+}
+@keyframes fly {
+  0% {left: 100%;
+      top: 100px;}
+  5% {left: 75%;
+      top: 50px;}
+  10% {left: 43%;
+      top: 5vw;}
+  15% {transform: rotate(-3deg);}
+  20% {transform: rotate(5deg);}
+  25% {transform: rotate(-3deg);}
+  30% {transform: rotate(5deg);}
+  35% {transform: rotate(-3deg);}
+  40% {transform: rotate(5deg);}
+  45% {transform: rotate(-3deg);}
+  50% {transform: rotate(5deg);}
+  55% {transform: rotate(-3deg);}
+  60% {transform: rotate(5deg);}
+  65% {transform: rotate(-3deg);}
+  70% {transform: rotate(5deg);}
+  75% {transform: rotate(-3deg);}
+  80% {
+      transform: rotate(5deg);
+      left: 43%;
+      top: 5vw;}
+  85% {left: 25%;
+      top: 50px;}
+  90% {left: -200px;
+      top: 50px;}
+  100% {left: -200px;
+      top: 50px;}
+
 }
 
 /* .box {
@@ -69,7 +109,7 @@ body {
   border-radius: 3em;
 } */
 .paws {
-  animation: rise 4s linear 10s;
+  animation: rise 2.1s linear 8.1s;
 }
 .paw-right {
   position: absolute;
@@ -123,7 +163,7 @@ body {
 
 /* Textbox 1 start */
   .textbox1 {
-    animation: slide1 1s ease backwards 8s;
+    animation: slide1 1s ease backwards 5s;
   }
   .textbox1:hover {
     filter: invert(100%);
@@ -142,8 +182,8 @@ body {
     color: black;
     letter-spacing: 0px;
     text-decoration: none;
-    font-size: 5vw;
-    top: 100px;
+    font-size: 3.5vw;
+    top: 120px;
     left: 14%;
 
   }
@@ -154,7 +194,7 @@ body {
 
 /* Textbox 2 start */
   .textbox2 {
-    animation: slide2 1s ease backwards 8.5s;
+    animation: slide2 1s ease backwards 5.5s;
   }
   .textbox2:hover {
     filter: invert(100%);
@@ -171,10 +211,10 @@ body {
     color: black;
     letter-spacing: 0px;
     position: absolute;
-    top: 350px;
+    top: 369px;
     left: 10%;
     text-decoration: none;
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
   .letters2:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -184,7 +224,7 @@ body {
 
 /* Textbox 3 start */
   .textbox3 {
-    animation: slide3 1s ease backwards 9s;
+    animation: slide3 1s ease backwards 6s;
   }
   .textbox3:hover {
     filter: invert(100%);
@@ -192,19 +232,19 @@ body {
   .bubble3 {
     position: absolute;
     height: auto;
-    width: 25%;
+    width: 30%;
     /* max-width: 300px; */
     top: 470px;
-    left: 7%;
+    left: 4%;
   }
   .letters3 {
     color: black;
     letter-spacing: 0px;
     position: absolute;
-    top: 545px;
-    left: 11%;
+    top: 580px;
+    left: 9%;
     text-decoration: none;
-    font-size: 6vw;
+    font-size: 3.5vw;
   }
   .letters3:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -214,7 +254,7 @@ body {
 
 /* Textbox 4 start */
   .textbox4 {
-    animation: slide4 1s ease backwards 8s;
+    animation: slide4 1s ease backwards 5s;
   }
   .textbox4:hover {
     filter: invert(100%);
@@ -231,9 +271,9 @@ body {
     letter-spacing: 0px;
     position: absolute;
     text-decoration: none;
-    font-size: 6vw;
-    top: 100px;
-    left: 68%;
+    font-size: 3.5vw;
+    top: 120px;
+    left: 69%;
   }
   .letters4:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -242,7 +282,7 @@ body {
 
 /* Textbox 5 start */
   .textbox5 {
-    animation: slide5 1s ease backwards 8.5s;
+    animation: slide5 1s ease backwards 5.5s;
   }
   .textbox5:hover {
     filter: invert(100%);
@@ -259,9 +299,9 @@ body {
     letter-spacing: 0px;
     position: absolute;
     text-decoration: none;
-    font-size: 6vw;
-    top: 350px;
-    left: 76%;
+    font-size: 3.5vw;
+    top: 370px;
+    left: 78%;
   }
   .letters5:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -273,7 +313,7 @@ body {
 
 /* Textbox 6 start */
   .textbox6 {
-    animation: slide6 1s ease backwards 9s;
+    animation: slide6 1s ease backwards 6s;
   }
   .textbox6:hover {
     filter: invert(100%);
@@ -290,10 +330,10 @@ body {
     color: black;
     letter-spacing: 4px;
     position: absolute;
-    top: 565px;
-    left: 70%;
+    top: 585px;
+    left: 67.5%;
     text-decoration: none;
-    font-size: 6vw;
+    font-size: 3.5vw;
   }
   .letters6:hover {
     animation: letterbounce 1.5s linear infinite;
@@ -493,7 +533,7 @@ body {
       .letters1 {
         font-size: 5vw;
         top: 15vw;
-        left: 8%;
+        left: 8.5%;
       }
       .bubble2 {
         height: auto;
@@ -502,18 +542,18 @@ body {
         left: 1%;
       }
       .letters2 {
-        top: 41vw;
+        top: 41.5vw;
         left: 8%;
         font-size: 5vw;
       }
       .bubble3 {
-        width: 35%;
-        top: 53vw;
-        left: 5%;
+        width: 37%;
+        top: 54vw;
+        left: 6%;
       }
       .letters3 {
-        top: 63vw;
-        left: 11%;
+        top: 63.5vw;
+        left: 9%;
         font-size: 5vw;
       }
       .bubble4 {
@@ -523,9 +563,9 @@ body {
         left: 65%;
       }
       .letters4 {
-        font-size: 6vw;
+        font-size: 5vw;
         top: 17vw;
-        left: 71%;
+        left: 69%;
       }
       .bubble5 {
         width: 34%;
@@ -534,19 +574,19 @@ body {
         left: 66%;
       }
       .letters5 {
-        font-size: 6vw;
-        top: 40vw;
-        left: 77%;
+        font-size: 5vw;
+        top: 42vw;
+        left: 79%;
       }
       .bubble6 {
-        width: 40%;
+        width: 43%;
         height: auto;
         top: 55vw;
-        left: 60%;
+        left: 56%;
       }
       .letters6 {
-        top: 62vw;
-        left: 69%;
-        font-size: 6vw;
+        top: 64vw;
+        left: 60%;
+        font-size: 5vw;
       }
 }
