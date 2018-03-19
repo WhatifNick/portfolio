@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
+@font-face {
+font-family: "funsized";
+src: url("css/fonts/funsized.ttf");
+}
+
 
 body {
   margin: 0px;
@@ -43,6 +48,7 @@ body {
     left: 20px;
     text-decoration: none;
     font-size: 20px;
+    font-family: "funsized";
   }
 
   .container {
@@ -61,6 +67,8 @@ body {
       font-size: 50px;
       text-align: center;
       padding: 2vw;
+      font-family: "funsized";
+      color: white;
     }
 
     #edu1 {
@@ -71,10 +79,10 @@ body {
       align-items: center;
       justify-content: center;
       border-radius: 20px;
-      opacity: 0.7;
+      opacity: 1;
     }
     #edu1:hover{
-      opacity: 1;
+      opacity: 0.7;
     }
     #logo1 {
       width: 100px;
@@ -90,11 +98,11 @@ body {
       align-items: center;
       justify-content: center;
       border-radius: 20px;
-      opacity: 0.7;
+      opacity: 1;
 
     }
     #edu2:hover{
-      opacity: 1;
+      opacity: 0.7;
     }
     #logo2 {
       width: 120px;
@@ -110,10 +118,10 @@ body {
       align-items: center;
       justify-content: center;
       border-radius: 20px;
-      opacity: 0.7;
+      opacity: 1;
     }
     #edu3:hover{
-      opacity: 1;
+      opacity: 0.7;
     }
     #logo3 {
       width: 80px;
@@ -141,6 +149,9 @@ body {
       font-size: 50px;
       text-align: center;
       padding: 2vw;
+      font-family: "funsized";
+      color: white;
+
     }
 
 
@@ -218,11 +229,35 @@ body {
     font-size: 3vw;
     top: 60px;
     padding: 5px 10px;
-
   }
   .container {
     margin-top: 8vw;
   }
+  #ht {
+    width: 14vw;
+    height: auto;
+  }
+  #css {
+    width: 10vw;
+    height: auto;
+  }
+  #ruby {
+    width: 12vw;
+    height: auto;
+  }
+  #rails {
+    width: 13vw;
+    height: auto;
+  }
+  #autodesk {
+    width: 20vw;
+    height: auto;
+  }
+  #sketch {
+    width: 15vw;
+    height: auto;
+  }
+
 
 }
 @media screen and (max-width: 500px){

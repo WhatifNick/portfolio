@@ -6,45 +6,40 @@ body {
   font-family: FunSized;
 }
 #nav {
-	width: 100%;
-	float: left;
-	margin: 0 0 3em 0;
-	padding: 0;
-	list-style: none;
-  font-family: sans-serif;
-
-}
-#nav li {
-	float: left;
-
-}
-
-#nav {
-	width: 100%;
-	float: left;
-	margin: 0 0 3em 0;
-	padding: 0;
-	list-style: none;
-	background-color: black;
-	/* border-bottom: 1px solid black; */
-	/* border-top: 1px solid #ccc; */
+  font-family: "Karla", Helvetica, sans-serif;
+  width: 100%;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  background-color: black;
+  text-align: center;
   opacity: 0.5;
 }
-
+#nav li {
+  display: inline;
+}
 #nav li a {
-	display: block;
-	padding: 8px 15px;
-	text-decoration: none;
-	font-weight: bold;
-	color: white;
-	border-right: 1px solid #ccc; }
+  display: inline-block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  }
+.line { border-right: 1px solid #ccc;}
 
-  #nav li a:hover {
-		color: skyblue;
-		background-color: blue;
-    /* opacity: 1; */
-   }
-
+.back {
+  position: absolute;
+  text-align: center;
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 2px;
+  padding: 12px 15px;
+  color: black;
+  top: 40px;
+  left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
 
 
 
@@ -52,7 +47,7 @@ body {
 
 .title {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 20%;
 
   font-size: 5vw;
@@ -69,36 +64,35 @@ body {
 .left {
   position:absolute;
   top:25%;
-    width: 600px;
+    width: 140vw;
     animation: grableft 3s linear infinite;
 }
 .right {
   position:absolute;
   top:25%;
-  width: 600px;
+  width: 140vw;
   animation: grabright 3s linear infinite;
-
 }
 @keyframes grabright {
   0% {
-    left: 80%;
+    left: 90%;
   }
   50% {
-    left: 50%;
+    left: 40%;
   }
   100% {
-    left: 80%;
+    left: 90%;
   }
 }
 @keyframes grableft {
   0% {
-    left: -150px;
+    left: -80%;
   }
   50% {
-    left: -400px;
+    left: -130%;
   }
   100% {
-    left: -150px;
+    left: -80%;
   }
 }
 
@@ -150,3 +144,30 @@ body {
       top: 50px;}
 
 } */
+@media screen and (max-width: 970px){
+  .back {
+    font-size: 3vw;
+    top: 60px;
+    padding: 5px 10px;}
+  .title {
+      top: 50%;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  .back {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 2px;
+    padding: 3px 5px;
+    color: black;
+    top: 80px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 2vw;
+  }
+  .title {
+      top: 280px;
+  }
+}
