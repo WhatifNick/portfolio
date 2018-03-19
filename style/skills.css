@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #6F6F71;
+  font-family: "Karla", Helvetica, sans-serif;
+
+  }
+
+  #nav {
+    font-family: "Karla", Helvetica, sans-serif;
+    width: 100%;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none;
+    background-color: black;
+    text-align: center;
+    opacity: 0.5;
+  }
+  #nav li {
+    display: inline;
+  }
+  #nav li a {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    }
+  .line { border-right: 1px solid #ccc;}
+
+  .back {
+    position: absolute;
+    text-align: center;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 2px;
+    padding: 12px 15px;
+    color: black;
+    top: 40px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .container {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 100%;
+  margin: 25px;
+
+    }
+
+
+    #education {
+      column-width: 1/2;
+      grid-row: 1/2;
+      font-size: 50px;
+      text-align: center;
+      padding: 2vw;
+    }
+
+    #edu1 {
+      column-width: 1/2;
+      grid-row: 2/3;
+      display: flex;
+      background-color: #FFFA8B;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      opacity: 0.7;
+    }
+    #edu1:hover{
+      opacity: 1;
+    }
+    #logo1 {
+      width: 100px;
+      padding: 12px;
+      margin: 0;
+    }
+
+    #edu2 {
+      column-width: 1/2;
+      grid-row: 3/4;
+      display: flex;
+      background-color: #89D8FF;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      opacity: 0.7;
+
+    }
+    #edu2:hover{
+      opacity: 1;
+    }
+    #logo2 {
+      width: 120px;
+      padding: 12px;
+      margin: 0;
+    }
+
+    #edu3 {
+      column-width: 1/2;
+      grid-row: 4/5;
+      display: flex;
+      background-color: white;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      opacity: 0.7;
+    }
+    #edu3:hover{
+      opacity: 1;
+    }
+    #logo3 {
+      width: 80px;
+
+      padding: 12px;
+      margin: 0;
+    }
+
+    .title  h1 {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .title  p {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+
+    #skills {
+      column-width: 2/4;
+      grid-column-end: span 2;
+      grid-row: 1/2;
+      font-size: 50px;
+      text-align: center;
+      padding: 2vw;
+    }
+
+
+    .icon {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    #ht {
+      height: 100px;
+      opacity: 0.7;
+    }
+    #ht:hover {
+      opacity: 1;
+    }
+    #css {
+      height: 100px;
+      opacity: 0.7;
+    }
+    #css:hover {
+      opacity: 1;
+    }
+    #ruby {
+      height: 100px;
+      opacity: 0.7;
+    }
+    #ruby:hover {
+      opacity: 1;
+    }
+    #rails {
+      height: 120px;
+      opacity: 0.7;
+    }
+    #rails:hover {
+      opacity: 1;
+    }
+    #autodesk {
+      height: 160px;
+      opacity: 0.7;
+    }
+    #autodesk:hover {
+      opacity: 1;
+    }
+    #sketch {
+      height: 120px;
+      opacity: 0.7;
+    }
+    #sketch:hover {
+      opacity: 1;
+    }
+
+
+@media screen and (max-width: 970px){
+  .title h1 {
+    font-size: 3vw;
+  }
+  .title p {
+    font-size: 2vw;
+  }
+  #logo1 {
+    width: 10vw;
+  }
+  #logo2 {
+    width: 13vw;
+  }
+  #logo3 {
+    width: 8vw;
+  }
+  #education {
+    font-size: 5vw;
+  }
+  .back {
+    font-size: 3vw;
+    top: 60px;
+    padding: 5px 10px;
+
+  }
+  .container {
+    margin-top: 8vw;
+  }
+
+}
+@media screen and (max-width: 500px){
+  .back {
+
+
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 2px;
+    padding: 3px 5px;
+    color: black;
+    top: 80px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 2vw;
+  }
+}
