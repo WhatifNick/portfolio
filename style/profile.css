@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
+@font-face {
+font-family: "funsized";
+src: url("css/fonts/funsized.ttf");
+}
 
 
 
@@ -19,8 +23,6 @@ body {
   	padding: 0;
   	list-style: none;
   	background-color: black;
-  	/* border-bottom: 1px solid black; */
-  	/* border-top: 1px solid #ccc; */
     text-align: center;
     opacity: 0.5;
   }
@@ -43,11 +45,6 @@ body {
   border-right: 1px solid #ccc;
 
 }
-    /* #nav li a:hover {
-  		color: skyblue;
-  		background-color: blue;
-      /* opacity: 1; */
-     /* }  */
 
 
 .back {
@@ -61,6 +58,7 @@ body {
   top: 40px;
   left: 20px;
   text-decoration: none;
+  font-family: "funsized";
 }
 
 .aboutme {
@@ -156,6 +154,26 @@ body {
 
 }
 
-  @media screen and (max-width: 650px){
+@media screen and (max-width: 970px){
+  .back {
+    font-size: 3vw;
+    top: 60px;
+    padding: 5px 10px;
+  }
 
+}
+  @media screen and (max-width: 500px){
+    .back {
+
+
+      border: 1px solid black;
+      background-color: white;
+      border-radius: 2px;
+      padding: 3px 5px;
+      color: black;
+      top: 80px;
+      left: 20px;
+      text-decoration: none;
+      font-size: 2vw;
+    }
   }
