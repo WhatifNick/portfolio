@@ -1,0 +1,152 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #6F6F71;
+  font-family: FunSized;
+}
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+  font-family: sans-serif;
+
+}
+#nav li {
+	float: left;
+
+}
+
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: black;
+	/* border-bottom: 1px solid black; */
+	/* border-top: 1px solid #ccc; */
+  opacity: 0.5;
+}
+
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	border-right: 1px solid #ccc; }
+
+  #nav li a:hover {
+		color: skyblue;
+		background-color: blue;
+    /* opacity: 1; */
+   }
+
+
+
+
+
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+
+  font-size: 5vw;
+}
+
+.bird {
+  position: absolute;
+  top:25%;
+  left: 40%;
+  width: 20%;
+  height: auto;
+  animation: divert 3s ease-in-out infinite;
+}
+.left {
+  position:absolute;
+  top:25%;
+    width: 600px;
+    animation: grableft 3s linear infinite;
+}
+.right {
+  position:absolute;
+  top:25%;
+  width: 600px;
+  animation: grabright 3s linear infinite;
+
+}
+@keyframes grabright {
+  0% {
+    left: 80%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+@keyframes grableft {
+  0% {
+    left: -150px;
+  }
+  50% {
+    left: -400px;
+  }
+  100% {
+    left: -150px;
+  }
+}
+
+@keyframes divert {
+  0% {left: 58%;}
+  15% {transform: rotate(-3deg);}
+
+  30% {transform: rotate(5deg);}
+
+  45% {transform: rotate(-3deg);}
+  50% {
+    left: 20%;
+    }
+
+  60% {transform: rotate(5deg);}
+
+  75% {transform: rotate(-3deg);}
+
+  90% {transform: rotate(5deg);}
+  100% {left: 58%;}
+}
+
+  /* 5% {left: 75%;
+      top: 50px;}
+  10% {left: 43%;
+      top: 5vw;}
+  15% {transform: rotate(-3deg);}
+  20% {transform: rotate(5deg);}
+  25% {transform: rotate(-3deg);}
+  30% {transform: rotate(5deg);}
+  35% {transform: rotate(-3deg);}
+  40% {transform: rotate(5deg);}
+  45% {transform: rotate(-3deg);}
+  50% {transform: rotate(5deg);}
+  55% {transform: rotate(-3deg);}
+  60% {transform: rotate(5deg);}
+  65% {transform: rotate(-3deg);}
+  70% {transform: rotate(5deg);}
+  75% {transform: rotate(-3deg);}
+  80% {
+      transform: rotate(5deg);
+      left: 43%;
+      top: 5vw;}
+  85% {left: 25%;
+      top: 50px;}
+  90% {left: -200px;
+      top: 50px;}
+  100% {left: -200px;
+      top: 50px;}
+
+} */

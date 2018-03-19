@@ -1,6 +1,3 @@
-/* body, html {
-  height: 100%;
-} */
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @font-face {
 font-family: "FunSized";
@@ -12,9 +9,8 @@ body {
   padding: 0px;
   overflow: hidden;
   background-color: #6F6F71;
-  font-family: "FunSized", sans-serif;
+  font-family: FunSized;
 }
-
 #nav {
   font-family: "Karla", Helvetica, sans-serif;
   width: 100%;
@@ -37,23 +33,6 @@ body {
   }
 .line { border-right: 1px solid #ccc;}
 
-
-.egg-bottom {
-  position: absolute;
-  width: 20%;
-  height: auto;
-  top: 12vw;
-  margin-left: 40%;
-  animation: wigglingdown 5s ease forwards;
-}
-.egg-top {
-  position: absolute;
-  width: 20%;
-  height: auto;
-  top: 12vw;
-  left: 40%;
-  animation: wigglingup 5s ease forwards;
-}
 .cat {
   position: absolute;
   width: 30%;
@@ -61,7 +40,7 @@ body {
   height: auto;
   top: 151px;
   left: 35%;
-  animation: grow 1s ease both 5s;
+
 }
 @keyframes grow {
   0% {transform: scale(.33);}
@@ -75,7 +54,7 @@ body {
   height: auto;
   top: 151px;
   left: 35%;
-  animation: grow 1s ease both 5s;
+
 }
 .twitter {
   width: 10%;
@@ -83,7 +62,7 @@ body {
   position: absolute;
   top: 10px;
   left: 43%;
-  animation: fly 20s infinite ease both 8s;
+  animation: fly 20s infinite ease both 2s;
 }
 @keyframes fly {
   0% {left: 100%;
@@ -117,76 +96,31 @@ body {
         top: 200px;}
 
 }
-
-/* .box {
-  position: absolute;
-  width: 15%;
-  height: 11%;
-  top: 30vw;
-  left: 36%;
-  border: 50px solid;
-  background: black;
-  opacity: 0;
-  border-radius: 3em;
-} */
-
 .paw-right {
   position: absolute;
   width: 50%;
   height: auto;
   top: 100px;
   left: 100%;
-  animation: scratch 3s linear 9s;
+  animation: scratch 3s linear 3s;
 }
 @keyframes scratch {
   0% {transform: translateX(0);}
   5% {transform: translateX(-60%);}
-  25% {transform: translateX(0);}
-  50% {transform: translateX(-80%);}
+  10% {transform: translateX(0);}
+  25% {transform: translateX(-80%);}
+  40% {transform: translateX(0);}
   65% {transform: translateX(0);}
-  80% {transform: translateX(-100%);}
+  80% {transform: translateX(0);}
   100% {transform: translateX(0);}
 }
 
 .cat-angry:hover {
   opacity: 1;
-
 }
-/* .box:hover + .paw-right {
-  transform: translateY(-400px);
-}
-.box:hover + .paw-left {
-  transform: translateY(-400px);
-} */
-@keyframes rise {
-  0% {transform: translateY(0px);}
-  10% {transform: translateY(-300px);}
-  50% {transform: translateY(-300px);}
-
-  55% {transform: translateY(-400px);}
-  70% {transform: translateY(-400px);}
-
-  75% {transform: translateY(-300px);}
-  99% {transform: translateY(-300px);}
-
-  100% {transform: translateY(0);}
-
-}
-/* .paws:hover {
-  transform: translateY(-2000px);
-
-
-} */
-/* .cat:hover {
-  transform: rotate(5deg);
-  100% {transform: rotate(-5deg)}
-} */
-
 
 /* Textbox 1 start */
   .textbox1 {
-
-    animation: slide1 1s ease backwards 5s;
   }
   .textbox1:hover {
     filter: invert(100%);
@@ -217,7 +151,6 @@ body {
 
 /* Textbox 2 start */
   .textbox2 {
-    animation: slide2 1s ease backwards 5.5s;
   }
   .textbox2:hover {
     filter: invert(100%);
@@ -247,7 +180,6 @@ body {
 
 /* Textbox 3 start */
   .textbox3 {
-    animation: slide3 1s ease backwards 6s;
   }
   .textbox3:hover {
     filter: invert(100%);
@@ -277,7 +209,7 @@ body {
 
 /* Textbox 4 start */
   .textbox4 {
-    animation: slide4 1s ease backwards 5s;
+
   }
   .textbox4:hover {
     filter: invert(100%);
@@ -305,7 +237,6 @@ body {
 
 /* Textbox 5 start */
   .textbox5 {
-    animation: slide5 1s ease backwards 5.5s;
   }
   .textbox5:hover {
     filter: invert(100%);
@@ -336,7 +267,6 @@ body {
 
 /* Textbox 6 start */
   .textbox6 {
-    animation: slide6 1s ease backwards 6s;
   }
   .textbox6:hover {
     filter: invert(100%);
@@ -379,33 +309,33 @@ body {
 
 /* Slide in textboxes */
 @keyframes slide1 {
-  0% {transform: translateX(-700px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(-700px);}
+  100% {transform: translateX(0px);}
 }
 
 @keyframes slide2 {
-  0% {transform: translateX(-700px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(-700px);}
+  100% {transform: translateX(0px);}
 }
 
 @keyframes slide3 {
-  0% {transform: translateX(-700px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(-700px);}
+  100% {transform: translateX(0px);}
 }
 
 @keyframes slide4 {
-  0% {transform: translateX(800px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(800px);}
+  100% {transform: translateX(0px);}
 }
 
 @keyframes slide5 {
-  0% {transform: translateX(800px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(800px);}
+  100% {transform: translateX(0px);}
 }
 
 @keyframes slide6 {
-  0% {transform: translateX(800px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(800px);}
+  100% {transform: translateX(0px);}
 }
 
 
@@ -548,7 +478,6 @@ body {
         left: 36%;
       }
       .bubble1 {
-
         width: 35%;
         height: auto;
         top: 4vw;
