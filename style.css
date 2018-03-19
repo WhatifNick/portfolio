@@ -379,18 +379,29 @@ body {
 
 /* Slide in textboxes */
 @keyframes slide1 {
-  0% {transform: translateX(-700px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(-700px)
+    /* translateY(-153px); */
+  }
+  100% {transform: translateX(0px)
+    /* translateY(-153px);} */
 }
 
 @keyframes slide2 {
-  0% {transform: translateX(-700px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(-700px)
+     /* translateY(-153px); */
+   }
+  100% {transform: translateX(0px)
+    /* translateY(-153px); */
+  }
 }
 
 @keyframes slide3 {
-  0% {transform: translateX(-700px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(-700px)
+    /* translateY(-153px); */
+  }
+  100% {transform: translateX(0px)
+    /* translateY(-153px); */
+  }
 }
 
 @keyframes slide4 {
