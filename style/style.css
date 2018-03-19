@@ -8,11 +8,9 @@ src: url("css/fonts/funsized.ttf");
 }
 
 body {
-  height: 100%;
-  width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: #6F6F71;
   font-family: "FunSized", sans-serif;
 }
@@ -61,18 +59,20 @@ body {
 
    100% {
      transform: rotate(0deg);
-     transform: translateY(1000px);
+     transform: translateY(3000px);
      }
  }
 @keyframes fly {
-  0% {left: 100%;
-      top: 100px;}
-  5% {left: 75%;
-      top: 50px;}
-  10% {left: 43%;
-      top: 5vw;}
-  15% {transform: rotate(-3deg);}
-  20% {transform: rotate(5deg);}
+  0% {left: -200px;
+  top: 200px;}
+  10% {left: -200px;
+  top: 200px;}
+  15% {left: 25%;
+  top: 70px;}
+  20% {
+  transform: rotate(5deg);
+  left: 43%;
+  top: 5vw;}
   25% {transform: rotate(-3deg);}
   30% {transform: rotate(5deg);}
   35% {transform: rotate(-3deg);}
@@ -84,17 +84,14 @@ body {
   65% {transform: rotate(-3deg);}
   70% {transform: rotate(5deg);}
   75% {transform: rotate(-3deg);}
-  80% {
-      transform: rotate(5deg);
-      left: 43%;
-      top: 5vw;}
-  85% {left: 25%;
-      top: 70px;}
-  90% {left: -200px;
-      top: 200px;}
-  100% {left: -200px;
-        top: 200px;}
-
+  80% {transform: rotate(5deg);}
+  85% {transform: rotate(-3deg);}
+  90% {left: 43%;
+  top: 5vw;}
+  95% {left: 75%;
+  top: 50px;}
+  100% {left: 100%;
+  top: 100px;}
 }
 /* Slide in textboxes */
 @keyframes slide1 {
@@ -107,11 +104,9 @@ body {
 
 }
 
-
-
 @keyframes slide2 {
-  0% {transform: translateX(800px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
+  0% {transform: translateX(2000px);}
+  100% {transform: translateX(0px);}
 }
 
 
@@ -122,6 +117,8 @@ body {
   top: 12vw;
   margin-left: 40%;
   animation: wigglingdown 5s ease forwards;
+  overflow: hidden;
+
 }
 .egg-top {
   position: absolute;
@@ -158,6 +155,7 @@ body {
   top: 10px;
   left: 43%;
   animation: fly 20s infinite ease both 8s;
+
 }
 
 
@@ -168,6 +166,8 @@ body {
   top: 100px;
   left: 100%;
   animation: scratch 3s linear 9s;
+
+
 }
 @keyframes scratch {
   0% {transform: translateX(0);}
@@ -180,15 +180,8 @@ body {
 }
 
 .cat-angry:hover {
-  opacity: 1;
+  opacity: 1;}
 
-}
-/* .box:hover + .paw-right {
-  transform: translateY(-400px);
-}
-.box:hover + .paw-left {
-  transform: translateY(-400px);
-} */
 @keyframes rise {
   0% {transform: translateY(0px);}
   10% {transform: translateY(-300px);}
@@ -203,16 +196,6 @@ body {
   100% {transform: translateY(0);}
 
 }
-/* .paws:hover {
-  transform: translateY(-2000px);
-
-
-} */
-/* .cat:hover {
-  transform: rotate(5deg);
-  100% {transform: rotate(-5deg)}
-} */
-
 
 /* Textbox 1 start */
   .textbox1 {
@@ -308,6 +291,8 @@ body {
 /* Textbox 4 start */
   .textbox4 {
     animation: slide2 1s ease backwards 5s;
+
+
   }
   .textbox4:hover {
     filter: invert(100%);
@@ -336,6 +321,8 @@ body {
 /* Textbox 5 start */
   .textbox5 {
     animation: slide2 1s ease backwards 5.5s;
+
+
   }
   .textbox5:hover {
     filter: invert(100%);
@@ -367,6 +354,8 @@ body {
 /* Textbox 6 start */
   .textbox6 {
     animation: slide2 1s ease backwards 6s;
+
+
   }
   .textbox6:hover {
     filter: invert(100%);
