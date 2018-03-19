@@ -568,35 +568,34 @@ body {
         font-size: 5vw;
       }
       @keyframes fly {
-        0% {left: 100%;
-            top: 100px;}
-        5% {left: 75%;
-            top: 50px;}
-        10% {left: 43%;
-            top: 50px;}
-        15% {transform: rotate(-3deg);}
-        20% {transform: rotate(5deg);}
-        25% {transform: rotate(-3deg);}
-        30% {transform: rotate(5deg);}
-        35% {transform: rotate(-3deg);}
-        40% {transform: rotate(5deg);}
-        45% {transform: rotate(-3deg);}
-        50% {transform: rotate(5deg);}
-        55% {transform: rotate(-3deg);}
-        60% {transform: rotate(5deg);}
-        65% {transform: rotate(-3deg);}
-        70% {transform: rotate(5deg);}
-        75% {transform: rotate(-3deg);}
-        80% {
-            transform: rotate(5deg);
-            left: 43%;
-            top: 50px;}
-        85% {left: 25%;
-            top: 70px;}
-        90% {left: -200px;
-            top: 200px;}
-        100% {left: -200px;
-            top: 200px;}
-
+      0% {left: -200px;
+      top: 200px;}
+      10% {left: -200px;
+      top: 200px;}
+      15% {left: 25%;
+      top: 70px;}
+      20% {
+      transform: rotate(5deg);
+      left: 43%;
+      top: 50px;}
+      25% {transform: rotate(-3deg);}
+      30% {transform: rotate(5deg);}
+      35% {transform: rotate(-3deg);}
+      40% {transform: rotate(5deg);}
+      45% {transform: rotate(-3deg);}
+      50% {transform: rotate(5deg);}
+      55% {transform: rotate(-3deg);}
+      60% {transform: rotate(5deg);}
+      65% {transform: rotate(-3deg);}
+      70% {transform: rotate(5deg);}
+      75% {transform: rotate(-3deg);}
+      80% {transform: rotate(5deg);}
+      85% {transform: rotate(-3deg);}
+      90% {left: 43%;
+      top: 50px;}
+      95% {left: 75%;
+      top: 50px;}
+      100% {left: 100%;
+      top: 100px;}
       }
 }
