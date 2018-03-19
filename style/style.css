@@ -14,7 +14,6 @@ body {
   background-color: #6F6F71;
   font-family: "FunSized", sans-serif;
 }
-
 #nav {
   font-family: "Karla", Helvetica, sans-serif;
   width: 100%;
@@ -37,54 +36,31 @@ body {
   }
 .line { border-right: 1px solid #ccc;}
 
-
-.egg-bottom {
-  position: absolute;
-  width: 20%;
-  height: auto;
-  top: 12vw;
-  margin-left: 40%;
-  animation: wigglingdown 5s ease forwards;
-}
-.egg-top {
-  position: absolute;
-  width: 20%;
-  height: auto;
-  top: 12vw;
-  left: 40%;
-  animation: wigglingup 5s ease forwards;
-}
-.cat {
-  position: absolute;
-  width: 30%;
-  /* max-width: 200px; */
-  height: auto;
-  top: 151px;
-  left: 35%;
-  animation: grow 1s ease both 5s;
-}
 @keyframes grow {
   0% {transform: scale(.33);}
   100% {transform: scale(1);}
 }
-.cat-angry {
-  position: absolute;
-  opacity: 0;
-  width: 30%;
-  max-width: 500px;
-  height: auto;
-  top: 151px;
-  left: 35%;
-  animation: grow 1s ease both 5s;
-}
-.twitter {
-  width: 10%;
-  height: auto;
-  position: absolute;
-  top: 10px;
-  left: 43%;
-  animation: fly 20s infinite ease both 8s;
-}
+@keyframes wigglingdown {
+   0% {transform: rotate(5deg);}
+   10% {transform: rotate(-3deg);}
+
+   15% {transform: scaleY(1.1)}
+   20% {transform: rotate(5deg);}
+   25% {transform: rotate(-4deg);}
+
+   33% {transform: scaleY(1.2)}
+   50% {transform: rotate(5deg);}
+   55%% {transform: rotate(-4deg);}
+
+   60% {transform: scaleY(1.3)}
+   75% {transform: rotate(-3deg);}
+   85% {transform: scaleY(1.5);}
+
+   100% {
+     transform: rotate(0deg);
+     transform: translateY(1000px);
+     }
+ }
 @keyframes fly {
   0% {left: 100%;
       top: 100px;}
@@ -117,18 +93,94 @@ body {
         top: 200px;}
 
 }
+/* Slide in textboxes */
+@keyframes slide1 {
+  0% {transform: translateX(-700px)
+    translateY(-153px);
+  }
+  100% {transform: translateX(0px)
+    translateY(-153px);}
+}
 
-/* .box {
+@keyframes slide2 {
+  0% {transform: translate(-700px)
+     /* translateY(-153px); */
+   }
+  100% {transform: translate(0px)
+    /* translateY(-153px); */
+  }
+}
+
+@keyframes slide3 {
+  0% {transform: translateX(-700px)
+    /* translateY(-153px); */
+  }
+  100% {transform: translateX(0px)
+    /* translateY(-153px); */
+  }
+}
+
+@keyframes slide4 {
+  0% {transform: translateX(800px) translateY(-153px);}
+  100% {transform: translateX(0px) translateY(-153px);}
+}
+
+@keyframes slide5 {
+  0% {transform: translateX(800px) translateY(-153px);}
+  100% {transform: translateX(0px) translateY(-153px);}
+}
+
+@keyframes slide6 {
+  0% {transform: translateX(800px) translateY(-153px);}
+  100% {transform: translateX(0px) translateY(-153px);}
+}
+
+
+.egg-bottom {
   position: absolute;
-  width: 15%;
-  height: 11%;
-  top: 30vw;
-  left: 36%;
-  border: 50px solid;
-  background: black;
+  width: 20%;
+  height: auto;
+  top: 12vw;
+  margin-left: 40%;
+  animation: wigglingdown 5s ease forwards;
+}
+.egg-top {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  top: 12vw;
+  left: 40%;
+  animation: wigglingup 5s ease forwards;
+}
+.cat {
+  position: absolute;
+  width: 30%;
+  /* max-width: 200px; */
+  height: auto;
+  top: 151px;
+  left: 35%;
+  animation: grow 1s ease both 5s;
+}
+
+.cat-angry {
+  position: absolute;
   opacity: 0;
-  border-radius: 3em;
-} */
+  width: 30%;
+  max-width: 500px;
+  height: auto;
+  top: 151px;
+  left: 35%;
+  animation: grow 1s ease both 5s;
+}
+.twitter {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 43%;
+  animation: fly 20s infinite ease both 8s;
+}
+
 
 .paw-right {
   position: absolute;
@@ -185,7 +237,6 @@ body {
 
 /* Textbox 1 start */
   .textbox1 {
-
     animation: slide1 1s ease backwards 5s;
   }
   .textbox1:hover {
@@ -377,47 +428,6 @@ body {
   100% {transform: translateY(0px);}
 }
 
-/* Slide in textboxes */
-@keyframes slide1 {
-  0% {transform: translateX(-700px)
-    /* translateY(-153px); */
-  }
-  100% {transform: translateX(0px)
-    /* translateY(-153px);} */
-}
-
-@keyframes slide2 {
-  0% {transform: translateX(-700px)
-     /* translateY(-153px); */
-   }
-  100% {transform: translateX(0px)
-    /* translateY(-153px); */
-  }
-}
-
-@keyframes slide3 {
-  0% {transform: translateX(-700px)
-    /* translateY(-153px); */
-  }
-  100% {transform: translateX(0px)
-    /* translateY(-153px); */
-  }
-}
-
-@keyframes slide4 {
-  0% {transform: translateX(800px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
-}
-
-@keyframes slide5 {
-  0% {transform: translateX(800px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
-}
-
-@keyframes slide6 {
-  0% {transform: translateX(800px) translateY(-153px);}
-  100% {transform: translateX(0px) translateY(-153px);}
-}
 
 
 
@@ -471,27 +481,7 @@ body {
       }
   }
 
-  @keyframes wigglingdown {
-     0% {transform: rotate(5deg);}
-     10% {transform: rotate(-3deg);}
 
-     15% {transform: scaleY(1.1)}
-     20% {transform: rotate(5deg);}
-     25% {transform: rotate(-4deg);}
-
-     33% {transform: scaleY(1.2)}
-     50% {transform: rotate(5deg);}
-     55%% {transform: rotate(-4deg);}
-
-     60% {transform: scaleY(1.3)}
-     75% {transform: rotate(-3deg);}
-     85% {transform: scaleY(1.5);}
-     /* 99% {transform: opacity(1);} */
-     100% {
-       transform: rotate(0deg);
-       transform: translateY(1000px);
-       }
-   }
 
 
 /* changes the width of the cat when the screen gets below 700px */
@@ -559,7 +549,6 @@ body {
         left: 36%;
       }
       .bubble1 {
-
         width: 35%;
         height: auto;
         top: 4vw;
