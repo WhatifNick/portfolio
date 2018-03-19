@@ -159,43 +159,29 @@ body {
 }
 
 
-.paw-right {
+.paw-left {
   position: absolute;
   width: 50%;
   height: auto;
   top: 100px;
-  left: 100%;
-  animation: scratch 3s linear 9s;
+  left: -60%;
+  animation: scratch 3s linear 11s;
 
 
 }
 @keyframes scratch {
   0% {transform: translateX(0);}
-  5% {transform: translateX(-60%);}
+  5% {transform: translateX(80%);}
   25% {transform: translateX(0);}
-  50% {transform: translateX(-80%);}
+  50% {transform: translateX(80%);}
   65% {transform: translateX(0);}
-  80% {transform: translateX(-100%);}
+  80% {transform: translateX(100%);}
   100% {transform: translateX(0);}
 }
 
 .cat-angry:hover {
   opacity: 1;}
 
-@keyframes rise {
-  0% {transform: translateY(0px);}
-  10% {transform: translateY(-300px);}
-  50% {transform: translateY(-300px);}
-
-  55% {transform: translateY(-400px);}
-  70% {transform: translateY(-400px);}
-
-  75% {transform: translateY(-300px);}
-  99% {transform: translateY(-300px);}
-
-  100% {transform: translateY(0);}
-
-}
 
 /* Textbox 1 start */
   .textbox1 {
