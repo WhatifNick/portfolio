@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@font-face {
+font-family: "funsized";
+src: url("/css/fonts/funsized.ttf");
+}
+
+
 body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
   background-color: #6F6F71;
   font-family: FunSized;
+    
 }
 #nav {
   font-family: "Karla", Helvetica, sans-serif;
