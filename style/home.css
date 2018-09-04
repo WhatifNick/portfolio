@@ -92,8 +92,8 @@ body {
   top: 5vw;}
   95% {left: 75%;
   top: 50px;}
-  100% {left: 100%;
-  top: 100px;}
+  100% {left: 90%;
+  top: -100px;}
 }
 
 .paw-left {
@@ -123,9 +123,11 @@ body {
 /* Textbox 1 start */
   .textbox1 {
   }
+/*
   .textbox1:hover {
     filter: invert(100%);
    }
+*/
   .bubble1 {
     position: absolute;
     width: 25%;
@@ -153,9 +155,11 @@ body {
 /* Textbox 2 start */
   .textbox2 {
   }
+/*
   .textbox2:hover {
     filter: invert(100%);
   }
+*/
   .bubble2 {
     position: absolute;
     height: auto;
@@ -182,9 +186,11 @@ body {
 /* Textbox 3 start */
   .textbox3 {
   }
+/*
   .textbox3:hover {
     filter: invert(100%);
   }
+*/
   .bubble3 {
     position: absolute;
     height: auto;
@@ -212,9 +218,11 @@ body {
   .textbox4 {
 
   }
+/*
   .textbox4:hover {
     filter: invert(100%);
    }
+*/
   .bubble4 {
     position: absolute;
     width: 24%;
@@ -239,9 +247,11 @@ body {
 /* Textbox 5 start */
   .textbox5 {
   }
+/*
   .textbox5:hover {
     filter: invert(100%);
    }
+*/
   .bubble5 {
     position: absolute;
     width: 30%;
@@ -269,9 +279,11 @@ body {
 /* Textbox 6 start */
   .textbox6 {
   }
+/*
   .textbox6:hover {
     filter: invert(100%);
   }
+*/
   .bubble6 {
     position: absolute;
     height: auto;
@@ -430,7 +442,7 @@ body {
       top: 50px;}
       95% {left: 75%;
       top: 50px;}
-      100% {left: 100%;
-      top: 100px;}
+      100% {left: 90%;
+      top: -100px;}
       }
 }
